@@ -11,31 +11,31 @@
         <input id="calculator-screen"type="text" placeholder="Results are shown here">
         <table class="center">
             <tr>
-                <td colspan="2">C</td>
-                <td>/</td>
-                <td>X</td>
+                <td colspan="2" onclick="action.clear()">C</td>
+                <td onclick="operation.division()">/</td>
+                <td onclick="operation.multiplication()">X</td>
             </tr>
             <tr>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-                <td>-</td>
+                <td onclick="addNumber.seven()">7</td>
+                <td onclick="addNumber.eight()">8</td>
+                <td onclick="addNumber.nine()">9</td>
+                <td onclick="operation.minus()">-</td>
             </tr>
             <tr>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>+</td>
+                <td onclick="addNumber.four()">4</td>
+                <td onclick="addNumber.five()">5</td>
+                <td onclick="addNumber.six()">6</td>
+                <td onclick="operation.sum()">+</td>
             </tr>
             <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td rowspan="2">=</td>
+                <td onclick="addNumber.one()">1</td>
+                <td onclick="addNumber.two()">2</td>
+                <td onclick="addNumber.three()">3</td>
+                <td rowspan="2" onclick="action.equals()">=</td>
             </tr>
             <tr>
-                <td colspan="2">0</td>
-                <td>.</td>
+                <td colspan="2" onclick="addNumber.zero()">0</td>
+                <td onclick="action.addPoint">.</td>
             </tr>
         </table>
     </div>
