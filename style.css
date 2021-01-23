@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: lightgrey;
+    border: 1px solid red;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: lightcyan;
+    height: 100%;
+    width: 100%;
+}
+
+/* -------General Classes------- */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ------- Body Styles ------- */
+
+
+div {
+    width: min(50%, 300px);
+    height: 70%;
+
+    background: rgb(34, 34, 34);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+
+} 
