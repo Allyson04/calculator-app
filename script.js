@@ -6,6 +6,10 @@ function addOperation(operationNeeded){
     document.getElementById("calculator-screen").value += operationNeeded
 }
 
+function eraseInput(){
+    document.getElementById("calculator-screen").value = ""
+}
+
 action = {
     clear() {
 
@@ -16,7 +20,7 @@ action = {
         var cutExpression = rawExpression.slice(0, -1)
 
         //reseting string on input
-        document.getElementById("calculator-screen").value = ""
+        eraseInput()
         document.getElementById("calculator-screen").value = cutExpression
     },
     addPoint(){
@@ -32,8 +36,7 @@ action = {
 
         //then we use eval() to interpret var finalExpression as a javascript code
         let finalExpression = eval(properExpression)
-        document.getElementById("calculator-screen").value = ""
+        eraseInput()
         document.getElementById("calculator-screen").value = finalExpression
-
     }
 }
