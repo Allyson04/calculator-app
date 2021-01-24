@@ -2,19 +2,8 @@ function addNumber(numberClicked){
     document.getElementById("calculator-screen").value += numberClicked
 }
 
-operation = {
-    sum(){
-        document.getElementById("calculator-screen").value += "+"
-    },
-    minus(){
-        document.getElementById("calculator-screen").value += "-"
-    },
-    multiplication(){
-        document.getElementById("calculator-screen").value += "x"
-    },
-    division(){
-        document.getElementById("calculator-screen").value += "/"
-    }
+function addOperation(operationNeeded){
+    document.getElementById("calculator-screen").value += operationNeeded
 }
 
 action = {
