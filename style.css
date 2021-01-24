@@ -31,7 +31,7 @@ body {
 
 div {
     width: min(50%, 300px);
-    height: 70%;
+    height: 450px;
 
     background: rgb(34, 34, 34);
     border-radius: 15px;
@@ -57,19 +57,19 @@ input {
     -o-border-radius: 5px;
 
     padding: 10px;
-    margin: 40px 0 10px;
+    margin: 30px 0 10px;
 }
 
 table {
     margin: 0 15px;
-    border-spacing: 5px;
+    border-spacing: 9px 7px;
     font-family: monospace;
     font-size: 1.3rem;
 }
 
 td {
-    width: 64px;
-    height: 64px;
+    width: 6.5rem;
+    height: 4rem;
     border: 1px solid black;
 
     background: rgb(46, 48, 75);
@@ -80,7 +80,7 @@ td {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 
-    box-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 4px black;
 }
 
 td:hover {
