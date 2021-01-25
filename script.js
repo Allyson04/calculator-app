@@ -2,6 +2,7 @@
 //so why not creating a var for him, instead of writing all the caller everytime?
 let getCalculator = document.getElementById("calculator-screen");
 
+
 function addNumber(numberClicked){
     getCalculator.value += numberClicked
 }
@@ -33,14 +34,34 @@ action = {
         getCalculator.value += "."
     },
     equals(){
+
+        let size = (getCalculator.value.length)-1
+        let lastChar = getCalculator.value.charAt(size)
+
         //first we transform "x" to "*", to prevent errors in application
         let rawExpression = getCalculator.value
         let properExpression = rawExpression.replace("x", "*")
 
+        switch(lastChar) {
+            case "/":
+            case "x":
+            case "+":
+            case "-":
+                alert("There was a problem with your request! Please, check if the expression ends with a number, not a operation symbol, and try again.")
 
-        //then we use eval() to interpret var finalExpression as a javascript code
-        let finalExpression = eval(properExpression)
-        eraseInput()
-        getCalculator.value = finalExpression
+            break    
+
+            default:
+                //we use eval() to interpret var finalExpression as a javascript code
+                let finalExpression = eval(properExpression)
+                eraseInput()
+                getCalculator.value = finalExpression
+            break
+        }
+        
+
+        
+        
+        
     }
 }
