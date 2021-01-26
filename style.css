@@ -1,3 +1,9 @@
+:root {
+    --calculatorBody: rgb(34, 34, 34);
+    --keyboard: rgb(46, 48, 75);
+    --keyboardClick: rgb(67, 70, 110);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +39,7 @@ div {
     width: min(50%, 300px);
     height: 450px;
 
-    background: rgb(34, 34, 34);
+    background: var(--calculatorBody);
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -72,7 +78,7 @@ td {
     height: 4rem;
     border: 1px solid black;
 
-    background: rgb(46, 48, 75);
+    background: var(--keyboard);
 
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -88,5 +94,5 @@ td:hover {
 }
 
 td:active {
-    background:rgb(67, 70, 110);
+    background: var(--keyboardClick);
 }
