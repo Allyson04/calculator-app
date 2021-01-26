@@ -48,8 +48,11 @@ action = {
             case "+":
             case "-":
                 alert("There was a problem with your request! Please, check if the expression ends with a number, and not a operation symbol.")
+            break
 
-            break    
+            case ".":
+                alert("Your expression ends with a point, please, in case of your number being a integer, please add a zero after the point or remove the point.")
+            break
 
             default:
                 //we use eval() to interpret var finalExpression as a javascript code
