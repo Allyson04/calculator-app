@@ -47,7 +47,7 @@ action = {
             case "x":
             case "+":
             case "-":
-                alert("There was a problem with your request! Please, check if the expression ends with a number, not a operation symbol, and try again.")
+                alert("There was a problem with your request! Please, check if the expression ends with a number, and not a operation symbol.")
 
             break    
 
@@ -57,11 +57,6 @@ action = {
                 eraseInput()
                 getCalculator.value = finalExpression
             break
-        }
-        
-
-        
-        
-        
+        }  
     }
 }
