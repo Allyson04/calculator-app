@@ -61,5 +61,8 @@ action = {
                 getCalculator.value = finalExpression
             break
         }  
+    },
+    erase(){
+        getCalculator.value = ""
     }
 }
