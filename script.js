@@ -63,6 +63,11 @@ action = {
         }  
     },
     erase(){
-        getCalculator.value = ""
+        let alertErase = prompt("Are you sure you want to erase your calculations? (Type 'y' for 'yes' or 'n for 'no')")
+
+        if (alertErase === 'y' | alertErase === "yes"){
+            getCalculator.value = "";
+        } else {
+        }
     }
 }
