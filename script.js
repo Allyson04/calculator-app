@@ -1,5 +1,5 @@
 //In this document we are going to always call the element "calculator-screen"
-//so why not creating a var for him, instead of writing all the caller everytime?
+//so why not creating a let for him, instead of writing all the caller everytime?
 let getCalculator = document.getElementById("calculator-screen");
 
 
@@ -18,11 +18,11 @@ function eraseInput(){
 action = {
     clear() {
 
-        //defining a var with value from input
-        var rawExpression = getCalculator.value
+        //defining a let with value from input
+        let rawExpression = getCalculator.value
 
         //removing ONLY the last character added
-        var cutExpression = rawExpression.slice(0, -1)
+        let cutExpression = rawExpression.slice(0, -1)
 
         //reseting string on input
         eraseInput()
@@ -55,7 +55,7 @@ action = {
             break
 
             default:
-                //we use eval() to interpret var finalExpression as a javascript code
+                //we use eval() to interpret let finalExpression as a javascript code
                 let finalExpression = eval(properExpression)
                 eraseInput()
                 getCalculator.value = finalExpression
